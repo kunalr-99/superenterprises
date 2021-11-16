@@ -1,0 +1,119 @@
+#landing__faqs__contact {
+  position: relative;
+  background: url("https://images.unsplash.com/photo-1530541263627-4314dd7a44c2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDJ8fGNvbnRhY3R8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60")
+    no-repeat center center/cover;
+}
+
+#faqs__contacts__container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  /* background: url("https://images.unsplash.com/uploads/1413222992504f1b734a6/1928e537?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGNvbnRhY3R8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60")
+    no-repeat center center/cover; */
+}
+
+#faqs__contacts__container:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba(0, 0, 0, 0.6); */
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.4) 0%,
+    rgba(0, 0, 0, 0.7) 60%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+
+#landing__faqs {
+  padding: 20px;
+  margin-top: 40px;
+  z-index: 10;
+}
+
+.faqs__accordian {
+  min-width: 300px;
+}
+
+.accordian__head h1 {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.faqs__accordian__item {
+  border: 5px solid #295ed6;
+  border-radius: 10px;
+  margin: 15px 0;
+  padding: 15px 10px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.accordian__question {
+  color: #fff;
+  width: 100%;
+  font-size: 1.1rem;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordian__question::after {
+  content: "+";
+  font-size: 1.8rem;
+  position: absolute;
+  right: 0;
+  transition: transform 500ms ease-in-out;
+}
+
+.accordian__question.active::after {
+  transform: rotate(-45deg);
+}
+
+.accordian__question p {
+  margin-bottom: 0;
+}
+
+.accordian__answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1000ms ease-in-out;
+  background-color: #222;
+  margin-top: 10px;
+}
+
+.accordian__answer p {
+  color: #aaa;
+  font-size: 1rem;
+  padding: 10px 5px;
+  text-align: justify;
+}
+
+.accordian__question.active + .accordian__answer {
+  max-height: 12rem;
+}
+
+@media (min-width: 768px) {
+  #faqs__contacts__container {
+    padding: 100px 0 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #faqs__contacts__container {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 200px 0 20px;
+    width: 100%;
+  }
+
+  .faqs__accordian {
+    width: 500px;
+  }
+}

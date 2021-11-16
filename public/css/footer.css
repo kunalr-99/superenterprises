@@ -1,0 +1,147 @@
+footer {
+  background-color: #000;
+  color: #ccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 10px 25px;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#footer__left {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+  border-bottom: 0.3px solid #333;
+}
+
+#footer__logo {
+  width: 60px;
+}
+
+#footer__logo img {
+  width: 100%;
+}
+
+#footer__copyrights {
+  line-height: 2.7rem;
+}
+
+#footer__copyrights span {
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+#footer__middle {
+  width: 75%;
+  border-bottom: 0.3px solid #333;
+  padding: 20px 0;
+}
+
+#footer__middle .footer__about {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+#footer__middle .footer__links ul li a {
+  margin: 10px 0;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border-bottom: 2px solid #000;
+  transition: all;
+}
+
+#footer__middle .footer__links ul li a:hover {
+  color: #5ed629;
+  border-bottom: 2px solid #5ed629;
+  transition-duration: 700ms;
+}
+
+#footer__right {
+  padding: 20px 0;
+  border-bottom: 0.3px solid #333;
+}
+
+#footer__right .footer__phrase {
+  margin-bottom: 10px;
+}
+
+#footer__right .footer__text {
+  width: 70%;
+  margin-bottom: 10px;
+  background-color: rgb(6, 54, 6);
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+
+#footer__right .footer__socials ul {
+  display: flex;
+}
+
+#footer__right .footer__socials ul li {
+  margin-right: 13px;
+}
+
+#footer__right .footer__socials ul .fa-phone-volume {
+  color: #0ff;
+}
+
+#footer__right .footer__socials ul .fa-envelope {
+  color: #f00;
+}
+
+#footer__right .footer__socials img {
+  width: 28.5px;
+}
+
+@media (min-width: 768px) {
+  #footer__left {
+    width: 65%;
+  }
+
+  #footer__middle {
+    width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #footer__left {
+    border: none;
+    width: auto;
+  }
+  #footer__middle {
+    border: none;
+    width: auto;
+  }
+  #footer__right {
+    border: none;
+  }
+
+  #footer__right .footer__phrase {
+    margin-bottom: 15px;
+  }
+
+  #footer__right .footer__text {
+    /* font-size: 1.05rem; */
+    width: 72%;
+    padding: 5px 12px;
+    margin-bottom: 20px;
+  }
+}

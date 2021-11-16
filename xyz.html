@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- <link
+      rel="stylesheet"
+      href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="OwlCarousel2-2.2.0/dist/assets/owl.theme.default.min.css"
+    /> -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <style>
+      .carousel-data {
+        width: 500px;
+        height: 500px;
+        background-color: #aaa;
+      }
+    </style>
+
+    <!-- <style>
+      body {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    </style> -->
+  </head>
+  <body>
+    <!-- <div class="owl-carousel owl-theme">
+      <div>
+        <img style="width: 200px" src="./window1.jpeg" />
+      </div>
+      <div>
+        <img style="width: 200px" src="./window1.jpeg" />
+      </div>
+      <div>
+        <img style="width: 200px" src="./window1.jpeg" />
+      </div>
+      <div>
+        <img style="width: 200px" src="./window1.jpeg" />
+      </div>
+      <div>
+        <img style="width: 200px" src="./window1.jpeg" />
+      </div>
+      <div>
+        <img style="width: 200px" src="./window1.jpeg" />
+      </div>
+      <div>
+        <img style="width: 200px" src="./window1.jpeg" />
+      </div>
+      <div>
+        <img style="width: 200px" src="./window1.jpeg" />
+      </div>
+    </div> -->
+
+    <!-- <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"
+    ></script> -->
+
+    <div class="carousel owl-carousel">
+      <div class="carousel-data content1">A</div>
+      <div class="carousel-data content2">B</div>
+      <div class="carousel-data content3">C</div>
+      <div class="carousel-data content4">D</div>
+      <div class="carousel-data content5">E</div>
+      <div class="carousel-data content6">F</div>
+    </div>
+
+    <script type="text/javascript">
+      $(".owl-carousel").owlCarousel({
+        // stagePadding: 200,
+        loop: false,
+        margin: 10,
+        nav: true,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          350: {
+            items: 1,
+          },
+          350: {
+            items: 1,
+          },
+          768: {
+            items: 3,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
